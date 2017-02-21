@@ -1,6 +1,7 @@
 import React from 'react';
 import Avatar from 'components/Landing/Avatar/AvatarContainer';
 import Card from 'components/Payment/Card';
+import Create from 'components/Perfil/CreateContainer';
 import SignUp from 'components/Landing/SignUp';
 import Recover from 'components/Landing/Recover';
 import SignIn from 'components/Landing/SignIn/SignInContainer';
@@ -13,6 +14,7 @@ export function selectModal({ api, closeModal, switchModal, currentModal, subscr
     recover: <Recover api={ api } closeModal={ closeModal } switchModal={ switchModal } />,
     avatar: <Avatar closeModal={ closeModal } switchModal={ switchModal } />,
     card: <Card api={ api } closeModal={ closeModal } switchModal={ switchModal } />,
+    create: <Create api={ api } closeModal={ closeModal } switchModal={ switchModal }/>,
     payment: <Plans data={ subscription_plans } location={ location } payment={ true } switchModal={ switchModal } />,
   };
 

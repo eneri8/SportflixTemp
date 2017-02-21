@@ -5,6 +5,7 @@ const initialState = {
   api: 'http://localhost:8000',
   location: window.location.origin,
   avatar: '',
+  language: 1,
 };
 
 function reducer(state = initialState, action = {}) {

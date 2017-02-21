@@ -11,3 +11,10 @@ export function setAvatar(avatar) {
     payload: avatar,
   };
 }
+
+export function setLanguage(language) {
+  return {
+    type: 'SET_LANGUAGE',
+    payload: language,
+  };
+}
